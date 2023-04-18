@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6", // 編譯成指定的 JavaScript 版本
+    "module": "commonjs", // 指定編譯成何種模組
+    "strict": true, // 採用嚴格模式
+    "removeComments": true, // 移除註解
+    "esModuleInterop": true, // 兼容模組
+    "baseUrl": "./src",  // 指定匯入檔案的基準路徑
+    "outDir": "./dist",  // 指定編譯後的檔案存放點
+    "rootDir": "./src",
+  },
+  "include": ["src/**/*.ts", "index.d.ts", "index.d.ts"], // 納入編譯範圍
+  "exclude": ["node_modules", "dist"] //不納入編譯範圍
+}

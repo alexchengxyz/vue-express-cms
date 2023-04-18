@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+
+  mongodb:
+    image : mongo
+    container_name: mongodb1
+    # 掛載資料庫
+    volumes:
+    - ./database:/data/db
+    ports:
+    - 27017:27017
+    restart: always
