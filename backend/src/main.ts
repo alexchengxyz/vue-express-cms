@@ -1,9 +1,8 @@
-// import './assets/main.css'
-
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import ElementPlus from 'element-plus';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
+import { i18n } from './utils';
 import 'element-plus/dist/index.css';
 
 import App from './App.vue';
@@ -16,6 +15,7 @@ Object.entries(ElementPlusIconsVue).forEach(([key, component]) => {
 });
 
 app
+  .use(i18n)
   .use(ElementPlus)
   .use(createPinia())
   .use(router)

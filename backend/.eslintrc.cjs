@@ -5,6 +5,8 @@ module.exports = {
   root: true,
   parser: 'vue-eslint-parser',
   extends: [
+    'plugin:vue/vue3-recommended',
+    'plugin:vue-pug/vue3-recommended',
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     'airbnb-base',
@@ -42,6 +44,14 @@ module.exports = {
       ts: 'never',
       vue: 'never',
       cjs: 'never',
+    }],
+    'vue/max-attributes-per-line': ['error', {
+      singleline: {
+        max: 3,
+      },
+      multiline: {
+        max: 1,
+      },
     }],
   },
   settings: {

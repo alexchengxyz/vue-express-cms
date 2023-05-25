@@ -1,0 +1,33 @@
+// 基本顏色設定
+$base-color-white: #FFF;
+$base-color-white-soft: #f8f8f8;
+$base-color-white-mute: #f2f2f2;
+
+$base-color-black: #181818;
+$base-color-black-soft: #222222;
+$base-color-black-mute: #282828;
+
+$base-color-indigo: #2c3e50;
+
+$base-color-divider-light-1: rgba(60, 60, 60, 0.29);
+$base-color-divider-light-2: rgba(60, 60, 60, 0.12);
+$base-color-divider-dark-1: rgba(84, 84, 84, 0.65);
+$base-color-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+$base-color-text-light-1: $base-color-indigo;
+$base-color-text-light-2: rgba(60, 60, 60, 0.7);
+$base-color-text-dark-1: $base-color-white;
+$base-color-text-dark-2: rgba(235, 235, 235, 0.64);
+
+// theme
+$color-background: $base-color-white;
+$color-background-soft: $base-color-white-soft;
+$color-background-mute: $base-color-white-mute;
+
+$color-border: $base-color-divider-light-2;
+$color-border-hover: $base-color-divider-light-1;
+
+$color-heading: $base-color-text-light-1;
+$color-text: $base-color-text-light-1;
+
+$section-gap: 160px;
