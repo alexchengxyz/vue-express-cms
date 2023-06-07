@@ -29,20 +29,21 @@ const menu = [
 </script>
 
 <template lang="pug">
-el-aside(:class="$style['el-aside']")
-  div.logo Management
+div
+  el-aside(:class="$style['el-aside']")
+    div.logo Management
 
-  el-menu(
-    active-text-color="#ffd04b"
-    background-color="#545c64"
-    default-active="2"
-    text-color="#fff"
-  )
-    template(v-for="(item, index) in menu" :key="index")
-      el-menu-item(index="index")
-      el-icon
-      div {{ item.icon }}
-      span {{ item.title }}
+    el-menu(
+      active-text-color="#ffd04b"
+      background-color="#545c64"
+      default-active="2"
+      text-color="#fff"
+    )
+      template(v-for="(title, icon, index) in menu")
+        el-menu-item(index="index")
+          el-icon
+            {{ icon }}
+          span {{ title }}
 </template>
 
 <style lang="scss" module>
@@ -52,3 +53,7 @@ el-aside(:class="$style['el-aside']")
     background: $base-color-black-soft;
   }
   </style>
+
+
+顯示以下錯誤訊息如何修正
+The template requires child element.eslintvue/valid-template-root

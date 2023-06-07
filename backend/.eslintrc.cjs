@@ -10,6 +10,7 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     'airbnb-base',
+    './.eslintrc-auto-import.json',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
